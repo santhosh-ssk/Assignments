@@ -1,0 +1,101 @@
+1. What are the different charsets in HTML?
+	ans) 
+		a)ASCII 	
+		b)ANSI 	
+		c)ISO-8859 	
+		d)UTF-8
+
+2. What is the behaviour if self closing tags are used with end tags?(i.e)
+	ans) closing tags are ignored in modern browsers
+
+3. What are the different types of ordered list and unordered list in html?
+	ans) a)ordered list(ol)
+		 b) unordered list(ul)
+		 c) definition list(dl)
+
+4. How to include an image of your choice as a bullet in unordered list?
+	ans) using css ul {list-style-image: url('sqpurple.gif');}
+
+5. How to design a table with a single border?
+	ans) using css {border-collapse: collapse;}
+
+6. What is the use of rowspan and columnspan?
+	ans) <td colspan="2" rowspan="2"></td>
+
+7. How to restrict a particular file type in an image select?
+	ans) <input type="file" accept="image/*">
+
+8. How to restrict input numbers or define a range in input element?
+	ans) 	<input type="range" name="points" min="0" max="10"> 
+
+9. How to include a youtube video in the document?
+	ans) 	<iframe width="420" height="315"
+			src="https://www.youtube.com/embed/tgbNymZ7vqY">
+			</iframe>
+
+10. Which tag is used to get the location of user?
+	ans) navigator.geolocation
+
+11. Why do we need multipart?
+	ans) enctype='multipart/form-data' means that no characters will be encoded. that is why this type is 
+		 used while uploading files to server, Set the value of enctype to multipart/form-data because the data will be split into multiple parts, one for each file plus one for the text of the form body that may be sent with them)
+
+12. HTTP request and response format
+	ans) a) request format
+	     GET /hello.htm HTTP/1.1
+		 User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+		 Host: www.tutorialspoint.com
+		 Accept-Language: en-us
+		 Accept-Encoding: gzip, deflate
+		 Connection: Keep-Alive
+		 
+		 b) response format
+		 GET /hello.htm HTTP/1.1
+		 User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+		 Host: www.tutorialspoint.com
+		 Accept-Language: en-us
+		 Accept-Encoding: gzip, deflate
+		 Connection: Keep-Alive
+		
+
+
+13. Difference between http and https
+	ans) In HTTP the data is transmmited without encription where as in HTTPS the information is encripted 
+	using Public key Infrastructure
+
+14. Use of AJAX
+	ans) AJAX allows web pages to be updated asynchronously by exchanging small amounts of data with the server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page. Classic web pages, (which do not use AJAX) must reload the entire page if the content should change.
+
+15. How to identify if a browser supports JavaScript or not?
+	ans) <noscript> is executed when browser does not support javascript
+
+16. How to identify if a browser supports HTML5 or not?
+	ans) // Detect HTML v5 compatibility
+		var isHtml5Compatible = document.createElement('canvas').getContext != undefined;
+
+17. Differences in usage of <strong> and <em>; with examples.
+	ans) a) The HTML <strong> element is found within the <body> tag. The <strong> tag is used to separate 
+	        the text from the rest of the content. Browsers traditionally bold the text found within the <strong> tag.
+	        ex: <strong>abc</strong>
+
+	     b) The HTML <em> tag marks text that has stress emphasis which traditionally means that the text is 
+	        displayed in italics by the browser. This tag is also commonly referred to as the <em> element.
+	        ex:<em>abc</em>
+
+
+18. What are the different coloring Standards in html?
+	a) by color name
+	b) Hex Codes
+	c) RGB Values
+
+19. How to semantically include references in html?
+ans) A semantic element clearly describes its meaning to both the browser and the developer.
+	 Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+	 Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+20. How to embed and open a pdf document in html?
+	ans) <embed src="MusicNotation.pdf" style="height: 100vh;width: 100vw"></embed>
+
+21. Difference between object and embed tag.
+ans) a)The <embed> tag defines a container for an external application or interactive content (a plug-in).
+	 b)The <object> tag defines an embedded object within an HTML document. Use this element to embed multimedia (like audio, video, Java applets, ActiveX, PDF, and Flash) in your web pages.

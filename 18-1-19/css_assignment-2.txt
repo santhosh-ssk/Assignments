@@ -1,0 +1,9 @@
+CSS Assignment 2
+1. What is the use of em?
+	ans) an em unit is equal to the computed font-size for the element to which the em is applied. ... If no  
+	     font size is defined anywhere in the CSS, the em unit will be equal to the browser's default font size for the document, which is usually 16px.
+
+2. How to strikethrough a text in CSS?
+	ans) using  property text-decoration: line-through;
+
+	

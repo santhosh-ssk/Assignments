@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NavBar</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	
+	<style type="text/css">
+		ul{
+			list-style-type: none;
+		}
+		li{
+			display: inline-block;
+		}
+		nav{
+			background-color: #2874f0;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		
+		}
+		body{
+			margin:0px;
+		}
+		.search{
+			width: 220%;
+			height: 30px;
+			margin: -10px;
+			margin-left: 50%;
+			border:none;
+			padding-left: 20px;
+			
+		}
+		.searchbox{
+			position: relative;
+		}
+		.search_icon{
+			position: absolute;
+			color: #0b71ef;
+			border-left: 2px solid #eee;
+			margin-left: -15px;
+			padding-left: 10px;
+			height: 26px;
+			padding-top: 5px;
+			left: 270%;
+			top: 0;
+			margin-top: -6px;
+			
+		}
+		.right_menu{
+			display: inline-block;
+			position: absolute;
+			right:8%;
+		}
+		.item{
+			font-weight: bold;
+			text-decoration: none;
+			color: white;
+			margin-left: 20px;
+			font-family: Sans-serif;
+		}
+		#cart_no{
+			background-color: #fe5b5b;
+			border-radius: 50%;
+			border:1px solid white;
+			padding: 2px 4px;
+			font-size: 8px;
+			position: relative;
+			left: 25px;
+			bottom:10px;
+		}
+		.dropdown{
+			position: relative;
+		}
+		.dropdown-title{
+			padding: 10px;
+		}
+		.dropdown:hover{
+			cursor: pointer;
+		}
+		.dropdown:hover > .dropdown-content{
+			display: block;
+		}
+
+
+		.dropdown-content{
+			text-align: left;
+			min-width: 250px;
+			margin-top: 5px;
+			left: -50px;
+			position: absolute;
+			z-index: 1;
+			display: none; 
+
+		}
+		.dropdown-content a{
+			color: black;
+			display: block;
+			font-weight: normal;
+			text-decoration:none;
+			padding: 15px 0px;
+			border-bottom: 1px solid #cccccc;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		.dropdown-content a:hover,.dropdown-content a:hover > i{
+			cursor: pointer;
+			background-color: #2874f0;
+			color: white !important;
+			font-weight: bold;
+		}
+		.dropdown-menu{
+			border:1px solid #c7c7c7;
+			border-top-color: white;
+		
+		}
+		.dropdown-menu a:last-child{
+			border-bottom: 1px solid white;
+		}
+		.dropdown-menu i{
+			color: #2874f0;
+			padding-right: 10px;
+		}
+
+
+		.arrow-up{
+			  width: 0; 
+			  height: 0; 
+			  border-left: 11px solid transparent;
+			  border-right: 11px solid transparent;
+			  border-bottom: 11px solid white;
+		}
+
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li class="searchbox"><input type="text" class="search" placeholder="Search for products, brands and more"><span class="search_icon"><i class="fas fa-search"></i></span></li>
+			<ul class="right_menu">
+				<li ><div class="item dropdown" href="#"><span class="dropdown-title">Santhosh <i class="fas fa-angle-up"></i></span>
+					<div class="dropdown-content">
+						<center><div class="arrow-up"></div></center>
+						<div class="dropdown-menu">
+							<a><i class="fas fa-user-circle"></i> My Profile</a>
+							<a><i class="fas fa-plus"></i> Flipkart Plus Zone</a>
+							<a><i class="fas fa-gamepad"></i> Game Zone</a>
+							<a><i class="fas fa-upload"></i> Orders</a>
+							<a><i class="fas fa-heart"></i> Wishlist</a>
+							<a><i class="fas fa-credit-card"></i> Rewards</a>
+							<a><i class="fas fa-wallet"></i> Gift Cards</a>
+							<a><i class="fas fa-bell"></i> Notifications</a>
+							<a><i class="fas fa-power-off"></i> Logout</a>
+						</div>
+					</div>
+				</div></li>
+				<li ><a class="item" href="#">More     <i class="fas fa-angle-up"></i></a></li>
+				<li ><a class="item" href="#"><span id="cart_no">2</span><i class="fas fa-shopping-cart"></i> Cart</a></li>
+			</ul>
+		</ul>
+	</nav>
+</body>
+</html>

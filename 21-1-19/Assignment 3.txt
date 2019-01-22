@@ -1,0 +1,29 @@
+CSS ASSIGNMENT
+
+1. What is the difference between the terms encode and encrypt?
+ans) Encoding is for maintaining data usability and can be reversed by employing the same algorithm that 
+	 encoded the content, i.e. no key is used. 
+
+	 Encryption is for maintaining data confidentiality and requires the use of a key (kept secret) in order to return to plaintext.
+
+2) What are the different http response codes?
+ans) a) 100 Continue
+	 b) 200 success
+	 c) 201 Created
+	 d) 204 No Content
+	 e) 304 Not Modified
+	 f) 400 Bad Request
+	 g) 403 Forbidden
+	 h) 401 Unauthorized
+	 i) 404 Not Found
+	 j) 409 Conflict
+	 k) 500 Internal Server Error
+	 l) 502 Bad Gateway
+	 m) 504 Gateway Timeout
+
+3) When to use which color scheme?
+
+4) What is CDN?
+ 	A content delivery network or content distribution network (CDN) is a geographically distributed network of proxy servers and their data centers. The goal is to provide high availability and high performance by distributing the service spatially relative to end-users. CDNs serve a large portion of the Internet content today, including web objects (text, graphics and scripts), downloadable objects (media files, software, documents), applications (e-commerce, portals), live streaming media, on-demand streaming media, and social media sites.[1]
+
+	CDNs are a layer in the internet ecosystem. Content owners such as media companies and e-commerce vendors pay CDN operators to deliver their content to their end users. In turn, a CDN pays ISPs, carriers, and network operators for hosting its servers in their data centers. 
