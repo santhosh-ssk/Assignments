@@ -1,0 +1,74 @@
+body{
+	height: 500px;
+	width:  350px;
+
+}
+.main{
+	margin-left: 50%;
+}
+
+.container{
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	border:1px solid black;
+}
+
+.row{
+
+	height: 20%;
+	width: 100%;
+	background-color: black;
+	border:1px solid black;
+}
+
+.half{
+	height: 47%;
+}
+
+.col-2{
+	width: 64%;
+	height: 100%;
+	display: inline-block;
+	background-color: white;
+	box-sizing: border-box;
+
+}
+.col-1{
+	width: 31%;
+	height: 100%;
+	display: inline-block;
+	background-color: white;
+	box-sizing: border-box;
+}
+
+.half-width{
+	width: 45% !important;
+}
+
+.bdr{
+	border:1px solid black;
+}
+.inlineblock{
+	display: inline-block;
+	background-color: black;
+	height: 100%;
+	width: 100%;
+}
+.inline-row{
+	display: inline-block;
+	width: 100%;
+	background-color: black;
+	border:1px solid black;
+}
+
+.top{
+	height: 60%;
+	box-sizing: border-box;
+
+}
+.bottom{
+	height: 35%;
+	box-sizing: border-box;
+	background-color: white;
+}

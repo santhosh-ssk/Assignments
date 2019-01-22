@@ -1,0 +1,66 @@
+body{
+	height: 95vh;
+	width:  30vw;
+}
+.main{
+	margin-left: 50%;
+}
+.container{
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	
+	border:3px solid black;
+	box-sizing: border-box;
+	
+}
+.row{
+	display: flex;
+	height: 20%;
+	background-color: #000;
+	justify-content: space-between;
+	border:3px solid black;
+	box-sizing: border-box;
+	
+}
+.wrap{
+	flex-wrap: wrap;
+}
+.col{
+	flex-basis: 48%;
+	background-color: white;
+}
+.col-1{
+	flex-basis: 33%;
+	background-color: white;
+}
+.col-2{
+	flex-basis: 60%;
+	background-color: white;
+}
+.col-3{
+	flex-basis: 66%;
+	background-color: white;
+}
+.col-4{
+	flex-basis: 100%;
+	background-color: white;	
+}
+.bbdr{
+	border-bottom:2px solid black;
+}
+.bdr{
+	border:2px solid black;
+}
+.full-height{
+	height: 100%;
+}
+.quarter-height{
+	height: 30%;
+}
+.half-height{
+	height: 50%;
+}
+.quarter3-height{
+	height: 70%
+}

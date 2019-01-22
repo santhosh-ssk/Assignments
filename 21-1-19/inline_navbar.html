@@ -5,9 +5,6 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	
 	<style type="text/css">
-		ul{
-			list-style-type: none;
-		}
 		li{
 			display: inline-block;
 		}
@@ -16,22 +13,24 @@
 			position: fixed;
 			top: 0;
 			width: 100%;
+			padding: 12px 0px; 
 		
 		}
 		body{
 			margin:0px;
 		}
 		.search{
-			width: 220%;
+			width: 200%;
 			height: 30px;
 			margin: -10px;
-			margin-left: 50%;
 			border:none;
 			padding-left: 20px;
 			
 		}
 		.searchbox{
 			position: relative;
+			left: 15%;
+			display: inline-block;
 		}
 		.search_icon{
 			position: absolute;
@@ -39,17 +38,18 @@
 			border-left: 2px solid #eee;
 			margin-left: -15px;
 			padding-left: 10px;
-			height: 26px;
-			padding-top: 5px;
-			left: 270%;
+			margin-top: -5px;
+			height: 30px;
+			left: 190%;
 			top: 0;
-			margin-top: -6px;
-			
+			line-height: 30px;
+
 		}
 		.right_menu{
 			display: inline-block;
 			position: absolute;
 			right:8%;
+			top: 0%;
 		}
 		.item{
 			font-weight: bold;
@@ -58,14 +58,17 @@
 			margin-left: 20px;
 			font-family: Sans-serif;
 		}
+		.cart{
+			position: relative;
+		}
 		#cart_no{
 			background-color: #fe5b5b;
 			border-radius: 50%;
 			border:1px solid white;
 			padding: 2px 4px;
 			font-size: 8px;
-			position: relative;
-			left: 25px;
+			position: absolute;
+			left: 10px;
 			bottom:10px;
 		}
 		.dropdown{
@@ -85,7 +88,7 @@
 		.dropdown-content{
 			text-align: left;
 			min-width: 250px;
-			margin-top: 5px;
+			margin-top: 0px;
 			left: -50px;
 			position: absolute;
 			z-index: 1;
@@ -134,8 +137,8 @@
 </head>
 <body>
 	<nav>
-		<ul>
-			<li class="searchbox"><input type="text" class="search" placeholder="Search for products, brands and more"><span class="search_icon"><i class="fas fa-search"></i></span></li>
+			<div class="searchbox"><input type="text" class="search" placeholder="Search for products, brands and more"><span class="search_icon"><i class="fas fa-search"></i></span></div>
+
 			<ul class="right_menu">
 				<li ><div class="item dropdown" href="#"><span class="dropdown-title">Santhosh <i class="fas fa-angle-up"></i></span>
 					<div class="dropdown-content">
@@ -153,10 +156,9 @@
 						</div>
 					</div>
 				</div></li>
-				<li ><a class="item" href="#">More     <i class="fas fa-angle-up"></i></a></li>
-				<li ><a class="item" href="#"><span id="cart_no">2</span><i class="fas fa-shopping-cart"></i> Cart</a></li>
+				<li ><a class="item" href="#">More <i class="fas fa-angle-up"></i></a></li>
+				<li ><a class="item cart" href="#"><span id="cart_no">2</span><i class="fas fa-shopping-cart"></i> Cart</a></li>
 			</ul>
-		</ul>
 	</nav>
 </body>
 </html>
