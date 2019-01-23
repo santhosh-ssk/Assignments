@@ -1,0 +1,34 @@
+body{
+	height: 100vh;
+	width:  100vw;
+
+}
+.container{
+	height: 40vh;
+	width:  40vh;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.circle{
+	height: 60%;
+	width:  60%;
+	border-radius: 50%;
+	position: absolute;
+}
+.one{
+	background-color: #29f13b;
+	z-index: 0;
+}
+.two{
+	right: 0;
+	background-color: #f5c800;
+	z-index: 10;
+}
+.three{
+	left: 20%;
+	bottom: 0;
+	background-color: #f700a1;
+	z-index: 20;
+}

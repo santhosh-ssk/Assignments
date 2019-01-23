@@ -16,12 +16,13 @@ body{
 
 .row{
 
-	height: 20%;
 	width: 100%;
 	background-color: black;
 	border:1px solid black;
 }
-
+.common{
+	height: 20%;
+}
 .half{
 	height: 47%;
 }

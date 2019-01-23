@@ -16,18 +16,20 @@ body{
 }
 .row{
 	display: flex;
-	height: 20%;
 	background-color: #000;
 	justify-content: space-between;
 	border:3px solid black;
 	box-sizing: border-box;
 	
 }
+.common{
+		height: 20%;
+}
 .wrap{
 	flex-wrap: wrap;
 }
 .col{
-	flex-basis: 48%;
+	flex-basis: 45%;
 	background-color: white;
 }
 .col-1{
@@ -63,4 +65,7 @@ body{
 }
 .quarter3-height{
 	height: 70%
+}
+.wrap{
+	flex-wrap: wrap;
 }
