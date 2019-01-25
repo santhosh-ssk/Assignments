@@ -7,9 +7,22 @@ body{
     width: 100%;
 }
 .row{
-    height: 25%;
     width: 100%;
 }
+
+.orange{
+	height: 15%;
+}
+.yellow{
+	height: 40%;
+}
+.blue{
+	height: 25%;
+}
+.white{
+	height: 15%;
+}
+
 
 .col{
     height: 100%;
@@ -46,6 +59,19 @@ body{
     .col-sm-10{width: 83.33%;}
     .col-sm-11{width: 91.66%;}
     .col-sm-12{width: 100%;}
+    
+    .orange{
+		height: 15%;
+		}
+	.yellow{
+			height: 20%;
+		}
+	.blue{
+			height: 30%;
+		}
+	.white{
+			height: 15%;
+		}
   }
 
 /* medium devices (tablets,320 to 758px) */
@@ -63,6 +89,19 @@ body{
     .col-md-10{width: 83.33%;}
     .col-md-11{width: 91.66%;}
     .col-md-12{width: 100%;}
+    
+    .orange{
+		height: 15%;
+		}
+	.yellow{
+			height: 30%;
+		}
+	.blue{
+			height: 20%;
+		}
+	.white{
+			height: 20%;
+		}
   }
 
 /* large devices (computers,759 to 1024px and above) */
