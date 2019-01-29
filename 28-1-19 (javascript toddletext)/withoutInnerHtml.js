@@ -44,18 +44,29 @@ function addItem(text){
     toddleList.push(element);
 
     //additem in dom
-    content.innerHTML += '<div class="item" id="'+element._id+'"><i class="fas fa-times-circle"></i><span>'+element.text+'<br>Id: '+element._id+'</span></div>';
-
-    //addlistener to item
-    // var item = document.getElementById(element._id);
-    // addlisener(item);
+    //content.innerHTML += '<div class="item" id="'+element._id+'"><i class="fas fa-times-circle"></i><span>'+element.text+'<br>Id: '+element._id+'</span></div>';
     
-    //addlisener's to each item in contents
-    itemsListener();
-
-    // var test_item = document.getElementById('1');
-    // console.log(test_item);
-
+    var itemtag = document.createElement('div');
+    itemtag.setAttribute("class","item");
+    itemtag.setAttribute("id",element._id);
+    itemtag.innerHTML = '<i class="fas fa-times-circle"></i><span>'+element.text+'<br>Id: '+element._id+'</span>';
+    
+    /*var iTag = document.createElement('i');
+    iTag.setAttribute("class","fas fa-times-circle");
+    var spanTag  = document.createElement('span');
+    var textnode = document.createTextNode(element.text); 
+    spanTag.appendChild(textnode);
+    itemtag.appendChild(iTag);
+    itemtag.appendChild(spanTag);
+    */
+   
+    content.appendChild(itemtag);
+    
+    //addlistener to item
+     var item = document.getElementById(element._id);
+     addlisener(item);
+    
+   
     //save it in localStorage
     localStorage.setItem('toddleList',JSON.stringify(toddleList));
     localStorage.setItem('lastIdemId',lastItemId);
@@ -105,7 +116,3 @@ function getElementIndex(arraylist,key){
     return pos;
 }
 
-// //test
-// var item = document.getElementById('1');
-// addlisener(item);
-// console.log(item,item.addEventListener) 
