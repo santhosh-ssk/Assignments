@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+   
+}
+.buttons{
+    width: 96%;
+    height: 50px;
+}
+.buttons button{
+    border: none;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-bottom: 3px solid #a897ff;
+    float: left;
+    font-size: 18px;
+}
+.buttons .active{
+    font-weight: bold;
+    border: 3px solid #2e65fe;
+}
+.form_container{
+    margin-left: 10%;
+    position: relative;
+    background-color: white;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+.bdr{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: #2e65fe;
+    clip-path: polygon(0% 0%,35% 0%,25% 50%,35% 100%,0% 100%);
+    z-index: -10;
+    left: 0;
+}
+.primary-btn{
+    width: 120px;;
+}

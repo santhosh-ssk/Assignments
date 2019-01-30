@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>News Board</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/form.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/login.css" />
+</head>
+<body>
+    <div class="bdr"></div>
+    <div class="flex-row fh flex-content-center ">
+        <div class="fb-sm-12 fb-md-6 fb-lg-3 ">
+            <div class="form_container" >
+                <div class="buttons">
+                    <button class="login_btn active" onclick="showLogin()">Login</button>
+                    <button class="signup_btn" onclick="showSignup()">Signup</button>
+                </div>
+                <form  id="login_form">
+                    <div class="field">
+                        <input type="text" name="username" class="form-control"/>
+                        <label>Username</label>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="field">
+                        <input type="password" name="password" class="form-control"/>
+                        <label>Password</label>
+                        <i class="fas fa-lock"></i>
+                        <i class="password-icon far fa-eye-slash" data-focus="0" form-id="login_form" onclick="changePasswordtype(this)"></i>
+                    </div>
+                    <div class="field">
+                       <center><input type="submit" class="primary-btn" value="Login"/></center> 
+                    </div>
+                </form>
+    
+                <form class="hide"   id="signup_form">
+                    <div class="field">
+                        <input type="text" name="username" class="form-control"/>
+                        <label>Username</label>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="field">
+                        <input type="password" name="password" class="form-control"/>
+                        <label>Password</label>
+                        <i class="fas fa-lock"></i>
+                        <i class="password-icon far fa-eye-slash" data-focus="0" form-id="signup_form" onclick="changePasswordtype(this)"></i>
+                    </div>
+                    <div class="field">
+                        <center><input type="submit" class="primary-btn" value="Register"/></center>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<script src="scripts/login.js"></script>
+</body>
+</html>
