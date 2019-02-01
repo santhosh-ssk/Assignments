@@ -1,15 +1,13 @@
-.verticalmenu{
-    background-color: #e8eaf6;
-    
-}
-.news{
-    overflow-y: scroll;
-}
 .verticalmenu > ul{
+    background-color: #e8eaf6;
+    overflow-y: scroll;
+    height: 100%;
     list-style: none;
     width: 100%;
     padding: 0;
     margin: 0;
+    display: table;
+    box-sizing: border-box;
 }
 .verticalmenu > ul li{
     color: black;
@@ -18,16 +16,18 @@
     font-family: sans-serif;
     box-sizing: border-box;
     padding: 10px 15px;
+    z-index: 10;
+    border-bottom:1px solid white;
 }
 .verticalmenu > ul li:hover{
-    background-color: #b39ddb;
-    box-sizing: border-box;
     cursor: pointer;
+    color: white;
+    background-color: #1976d2;
 }
 .news-title{
     text-align: center;
     font-family: sans-serif;
-    color: #2874f0;
+    color: #0d47a1;
 }
 .descripion{
     width: 80%;
@@ -60,9 +60,31 @@
     color: red;
 }
 .note-content{
-    width: 200px;
+    width: 150px;
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;  
+    text-overflow: ellipsis;
 }
+
+/* medium devices (tablets,420 to 758px) */
+@media (min-width: 420px) and (max-width: 900px) {
+    .note-content{
+        width: 90px;
+    }    
+}
+
+#bars{
+    display: none;
+}
+/* small devices (phones,420) */
+@media (max-width: 419px) {
+    #news-board{
+       display: none;
+    }    
+    #bars{
+        display: block ;
+    }
+}
+
+

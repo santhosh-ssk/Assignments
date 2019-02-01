@@ -11,30 +11,45 @@ body{
     width: 50%;
     height: 100%;
     background-color: white;
-    border-bottom: 3px solid #a897ff;
+    border-bottom: 3px solid #0d48a180;
     float: left;
     font-size: 18px;
 }
 .buttons .active{
     font-weight: bold;
-    border: 3px solid #2e65fe;
+    border: 3px solid #0d47a1;
 }
 .form_container{
     margin-left: 10%;
     position: relative;
     background-color: white;
-    padding: 10px 0px;
     box-sizing: border-box;
 }
 .bdr{
     height: 100vh;
     width: 100%;
     position: absolute;
-    background-color: #2e65fe;
+    background-color: #0d47a1;
     clip-path: polygon(0% 0%,35% 0%,25% 50%,35% 100%,0% 100%);
     z-index: -10;
     left: 0;
 }
 .primary-btn{
     width: 120px;;
+    margin-bottom: 10px;
+}
+
+/* Extra small devices (phones, 320px and down) */
+@media(max-width: 320px) {
+    .bdr{
+        clip-path: polygon(0% 0%,55% 0%,10% 50%,55% 100%,0% 100%);
+    }
+}
+
+/* medium devices (tablets,420 to 758px) */
+@media (min-width: 420px) and (max-width: 900px) {
+    .form_container{
+        position: relative;
+        left: 20%;
+    }    
 }

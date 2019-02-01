@@ -24,6 +24,7 @@ body{
 }
 .flex-content-center{
     align-content: center;
+    align-items: center;
 }
 .show{
     display: block;
@@ -32,7 +33,7 @@ body{
     display: none;
 }
 /* Extra small devices (phones, 320px and down) */
-@media(max-width: 320px) {
+@media(max-width: 420px) {
     /* For Small Device: */
     .col-sm-1 {width: 8.33%;}
     .col-sm-2{width: 16.66%;}
@@ -63,7 +64,7 @@ body{
   }
 
 /* medium devices (tablets,320 to 758px) */
-@media (min-width: 321px) and (max-width: 758px) {
+@media (min-width: 420px) and (max-width: 900px) {
     /* For laptops: */
     .col-md-1 {width: 8.33%;}
     .col-md-2{width: 16.66%;}
@@ -80,13 +81,13 @@ body{
     
     .fb-md-1 {flex-basis: 8.33%;}
     .fb-md-2{flex-basis: 16.66%;}
-    .fb-md-3{flex-basis: 25%;}
+    .fb-md-3{flex-basis: 31%;}
     .fb-md-4{flex-basis: 33.33%;}
     .fb-md-5{flex-basis: 41.66%;}
     .fb-md-6{flex-basis: 50%;}
     .fb-md-7{flex-basis: 58.33%;}
     .fb-md-8{flex-basis: 66.66%;}
-    .fb-md-9{flex-basis: 75%;}
+    .fb-md-9{flex-basis: 69%;}
     .fb-md-10{flex-basis: 83.33%;}
     .fb-md-11{flex-basis: 91.66%;}
     .fb-md-12{flex-basis: 100%;}
@@ -97,7 +98,7 @@ body{
     /* For desktop: */
     .col-lg-1 {width: 8.33%;}
     .col-lg-2{width: 16.66%;}
-    .col-lg-3{width: 25%;}
+    .col-lg-3{width: 28%;}
     .col-lg-4{width: 33.33%;}
     .col-lg-5{width: 41.66%;}
     .col-lg-6{width: 50%;}
@@ -110,13 +111,13 @@ body{
 
     .fb-lg-1 {flex-basis: 8.33%;}
     .fb-lg-2{flex-basis: 16.66%;}
-    .fb-lg-3{flex-basis: 25%;}
+    .fb-lg-3{flex-basis: 31%;}
     .fb-lg-4{flex-basis: 33.33%;}
     .fb-lg-5{flex-basis: 41.66%;}
     .fb-lg-6{flex-basis: 50%;}
     .fb-lg-7{flex-basis: 58.33%;}
     .fb-lg-8{flex-basis: 66.66%;}
-    .fb-lg-9{flex-basis: 75%;}
+    .fb-lg-9{flex-basis: 69%;}
     .fb-lg-10{flex-basis: 83.33%;}
     .fb-lg-11{flex-basis: 91.66%;}
     .fb-lg-12{flex-basis: 100%;}

@@ -25,10 +25,11 @@
 .form_container .form-control  {
     font-size: 22px;
     border: none;
-    height: 25px;
-    border-bottom: 3px solid #a897ff;
-    padding: 3px 25px;
+    height: 30px;
+    border-bottom: 3px solid #0d48a180;
+    padding: 5px 25px;
     margin-top: 35px;
+    padding-bottom: 10px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -47,7 +48,7 @@
     margin-left: 10px;
     color: rgba(0, 0, 0, 0.425);
     position: absolute;
-    top: 55%;
+    top: 58%;
     left: 0;
 }
 .password-icon{
@@ -55,14 +56,14 @@
     left: unset !important;
     z-index: 20;
 }
-.form-control:focus ~ .password-icon:hover{
+.password-icon:hover{
     cursor: pointer;
 }
 .form_container .form-control:focus  {
-    border-bottom: 3px solid #2e65fe;
+    border-bottom: 3px solid #0d47a1;
 }
 .form_container .textboxfield textarea:focus{
-    border: 3px solid #2e65fe;
+    border: 3px solid #0d47a1;
 }
 
 .form_container .form-control:focus ~ label{
@@ -78,8 +79,8 @@
     border-radius: 25px;
     font-weight: bold;
     background: #2e65fe;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #2e65fe, #07c8e9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #2e65fe, #07c8e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to left, #2e65fe, #0d47a1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2e65fe, #0d47a1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .form_container .primary-btn:hover,.form_container .buttons button:hover{

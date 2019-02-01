@@ -5,33 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>NotePad</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"><link rel="stylesheet" type="text/css" media="screen" href="styles/bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/navbar.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/notes.css" />    
     
 </head>
 <body>
     <nav>
+        <ul class="left_menu">
+            <li id="bars" onclick="showMenu()"><a class="item" href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+
         <ul class="right_menu">
 			<li onclick="addNote()"><a class="item" href="#">Add-Note</a></li>
 		</ul>
      </nav>
      
      <div class="flex-row fh">
-        <div class="fb-sm-12 fb-md-4 fb-lg-3 fh verticalmenu" >
+        <div class="fb-sm-12 fb-md-3 fb-lg-3 fh verticalmenu" id="verticalmenu" >
             <ul id="menu">
             </ul>
         </div>
-        <div class="fb-sm-12 fb-md-8 fb-lg-9 fh" >
+        <div class="fb-sm-12 fb-md-9 fb-lg-9 fh " id="news-board">
             <div class="container">
                 <div class="row news-board">
                     <h3 class="news-title">Add Notes</h3>
                     <div class="descripion">
                         <label for="descripion">Description</label>
                         <i class="far fa-trash-alt delete"></i><br>
-                        <textarea rows="14" name="description" id="description"></textarea>                                    
-                        <input type="hidden" id='_id' value="" name="_id""/>
+                        <textarea rows="14" name="description" id="description" note-id="" flag="1" placeholder=""></textarea>                                    
+                        <!-- <input type="hidden" id='_id' value="" name="_id""/> -->
                     </div>
                 </div>
              </div>
